@@ -1,0 +1,93 @@
+body {
+    background-image: url(login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.outer {
+    max-width: 720px;
+    height: 650px;
+    background-color: white;
+    border-radius: 10px; /* Rounded corners for the outer container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+}
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px; /* Rounded corners for the inner container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar {
+    border-radius: 10px 10px 0 0; /* Rounded corners for the navbar */
+}
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: #333;
+}
+.navbar-nav .nav-link {
+    color: #333;
+}
+.navbar-nav .nav-link:hover {
+    color: green;
+}
+.form-control {
+    margin-right: 10px;
+}
+.btn-outline-success {
+    border-color: green;
+    color: green;
+}
+.btn-outline-success:hover {
+    background-color: green;
+    color: white;
+}
+.chat-container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contacts {
+    margin-left: 46px;
+    width: 80%;
+    color: hsl(0, 26%, 4%);
+    overflow-y: auto;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+    
+}
+.contact-list-item {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rounded corners for contact list items */
+    
+    text-align: center;
+}
+.contact-name {
+    flex: 1;
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+.logout-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+

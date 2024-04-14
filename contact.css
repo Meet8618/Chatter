@@ -1,0 +1,83 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(login.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .border {
+            border: 1px solid #3a289c;
+            border-radius: 10px;
+        }
+        .border2 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .chat-box {
+            background-color: #1240ab;
+            border: 1px solid #ddd;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .chat-box h2 {
+            text-align: center;
+            color: #075e54;
+            background-color: #39128c;
+            color: white;
+            padding: 10px;
+            margin: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding-left: 10px;
+        }
+        .message-input-container {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .message-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #0f4da9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .message_container {
+            height: 400px;
+            width: 100%;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: auto;
+        }
+        .message {
+            background-color: #7b89c3;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px;
+            max-width: 70%;
+        }
+        .user-message {
+            align-self: flex-end;
+        }
+        button:hover {
+            background-color: #128c7e;
+        }
+    

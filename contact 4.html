@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatter - Chat with Contact 4</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <div class="border">
+        <nav class="chat-box">
+            <h2>Contact 4</h2>
+        </nav>
+        <br>
+        <div class="border2">
+            <div class="message_container" id="chat-messages">
+                <!-- Messages will be displayed here -->
+            </div>
+        </div>
+        <br>
+        <div class="message-input-container">
+            <input type="text" class="message-input" id="message" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <br>
+    </div>
+
+    <script>
+        // JavaScript for sending and receiving messages
+        function sendMessage() {
+            const messageInput = document.getElementById("message");
+            const messageText = messageInput.value.trim();
+
+            if (messageText === "") {
+                return;
+            }
+
+            // Create a new message element and add it to the chat box
+            const messageElement = document.createElement("div");
+            messageElement.textContent = messageText;
+            messageElement.classList.add("message", "user-message"); // Add message classes
+
+            // Append the new message to the chat container (with ID "chat-messages")
+            document.getElementById("chat-messages").appendChild(messageElement);
+
+            // Clear the input field
+            messageInput.value = "";
+        }
+    </script>
+</body>
+</html>

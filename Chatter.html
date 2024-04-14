@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Chatter.css">
+</head>
+<body>
+    <div class="outer">
+        
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    
+                    <a class="navbar-brand" href="#"><img src="chatter-icon.png" alt="Chatter Icon" class="chatter-icon" style="width: 40px; height: 40px;"> Chatter</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control form-control-sm" type="search" id="contact-search" placeholder="Search">
+                        <button class="btn btn-outline-success btn-sm" type="button" id="search-button">Search</button>
+                    </form>
+                    
+                </div>
+                
+            </nav>
+        <br>
+        <div class="chat-container">
+            <div class="contacts">
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <a href="contact 1.html">
+                            <span class="contact-name">Contact 1</span>
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="contact 2.html">
+                            <span class="contact-name">Contact 2</span>
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="contact 3.html">
+                            <span class="contact-name">Contact 3</span>
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="contact 4.html">
+                            <span class="contact-name">Contact 4</span>
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="contact 5.html">
+                            <span class="contact-name">Contact 5</span>
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="contact 6.html">
+                            <span class="contact-name">Contact 6</span>
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="contact 7.html">
+                            <span class="contact-name">Contact 7</span>
+                        </a>
+                    </li>
+                    <li class="contact-list-item">
+                        <a href="contact 8.html">
+                            <span class="contact-name">Contact 8</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+               
+            </div>
+            
+        </div>
+        <div class="logout-button-container">
+            <button class="btn btn-danger logout-button">
+                <a href="login.html" style="color: white; text-decoration: none; text-align: center;">Logout</a>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for searching contacts
+        document.getElementById("search-button").addEventListener("click", function () {
+            const searchText = document.getElementById("contact-search").value.toLowerCase();
+            const contactList = document.querySelectorAll(".contact-list-item");
+
+            contactList.forEach(function (contact) {
+                const contactName = contact.querySelector(".contact-name").textContent.toLowerCase();
+                if (contactName.includes(searchText)) {
+                    contact.style.display = "flex";
+                } else {
+                    contact.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
